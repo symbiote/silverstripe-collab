@@ -22,7 +22,7 @@ class SearchDashlet_Controller extends Dashlet_Controller {
 	public function init() {
 		parent::init();
 		Requirements::javascript(THIRDPARTY_DIR . '/jquery-entwine/dist/jquery.entwine-dist.js');
-		Requirements::javascript('mysite/javascript/dashlet-searchdashlet.js');
+		Requirements::javascript('intra-sis/javascript/dashlet-searchdashlet.js');
 	}
 
 	public function SearchForm() {
