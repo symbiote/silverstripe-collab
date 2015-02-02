@@ -4,9 +4,6 @@
 	"type": "silverstripe-module",
 	"license": "BSD-3-Clause",
 	"require": {
-		"silverstripe/cms": "3.1.9",
-		"silverstripe/framework": "3.1.9",
-
 		"silverstripe-australia/ba-sis": "1.0.x-dev",
 		"silverstripe/memberprofiles": "dev-master#faadc0e76b2f908a1581f599cf445df952a78ad0",
 		"silverstripe/microblog": "1.0.x-dev#e891b6710ba92d4709081e7bc66dca35d56269f9",
