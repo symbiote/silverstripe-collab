@@ -5,10 +5,10 @@
 	"license": "BSD-3-Clause",
 	"require": {
 		"silverstripe-australia/ba-sis": "1.0.x-dev",
-		"silverstripe-australia/memberprofiles": "dev-master#faadc0e76b2f908a1581f599cf445df952a78ad0",
+		"silverstripe-australia/memberprofiles": "1.1.0",
 		"silverstripe/event-calendar": "1.0.9",
-		"silverstripe/frontend-dashboards": "dev-master#c912359268ec0ede609188de31f7dd1b97692f95",
-		"silverstripe/microblog": "1.0.x-dev#e891b6710ba92d4709081e7bc66dca35d56269f9"
+		"silverstripe/frontend-dashboards": "~1.1",
+		"silverstripe/microblog": "1.2.x-dev"
 	},
 	"extra": {
 		"branch-alias": {
