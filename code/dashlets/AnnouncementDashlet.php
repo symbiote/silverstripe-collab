@@ -66,29 +66,25 @@ class AnnouncementDashlet_Controller extends Dashlet_Controller {
 	
 	public function _getAnnouncement($render = true) {
 		if (ClassInfo::hasTable('MediaHolder')) {
-			$media = MediaHolder::get()->filter(array('MediaType' => 'News'));
+			$media = MediaHolder::get()->filter(array('MediaType.Title' => 'News'));
 			$possible = $media->first();
 
 			// what about an announcement title'd page
-			$announcement = $media->filter(array('Title' => 'Announcements'))->first();
+			$page = $media->filter(array('Title' => 'Announcements'))->first();
 
-			if (!$announcement) {
-				$announcement = $possible;
+			if (!$page) {
+				$page = $possible;
 			}
 
-			if ($announcement) {
-				$page = $announcement->AllUpdates()->first();
-				if ($page) {
-					if (!$render) return $page;
-
-					$templates = array();
-					if ($page->MediaType) {
-						$templates[] = "Layout/{$page->ClassName}_{$page->MediaType}";
+			if ($page) {
+				$announcement = MediaPage::get()->filter('ParentID', $page->ID)->sort('Date DESC')->first();
+				if ($announcement) {
+					if (!$render) {
+						return $announcement;
 					}
-					$templates[] = "Layout/{$page->ClassName}";
-					$templates[] = 'Layout/Page';
-
-					return ModelAsController::controller_for($page)->renderWith($templates);
+					else {
+						return ModelAsController::controller_for($announcement)->index();
+					}
 				}
 			}
 		}
