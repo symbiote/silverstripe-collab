@@ -26,21 +26,20 @@ class SearchDashlet_Controller extends Dashlet_Controller {
 	}
 
 	public function SearchForm() {
-		$input = new TextField('Search', '');
-		$input->setAttribute('Placeholder', 'Search Term');
-		$fields = new FieldList($input);
-		$submit = new FormAction('results', 'Search');
-		$actions = new FieldList($submit);
-		$form = new SearchForm($this, "SearchForm", $fields, $actions);
-		$form->addExtraClass('search-dashlet-form');
 
+		// Use the extensible search form, since it's a dependency of ba-sis.
+
+		$form = null;
+		if(Controller::curr()->hasMethod('SearchForm') && ($form = Controller::curr()->SearchForm())) {
+			$form->addExtraClass('search-dashlet-form');
+		}
 		return $form;
 	}
 
 	public function results($data, $form) {
 		$query = $form->getSearchQuery();
 		$results = $form->getResults(5);
-		
+
 		foreach ($results as $item) {
 			$item->URL = $item->hasMethod('Link') ? $item->Link() : $item->URLSegment;
 		}
