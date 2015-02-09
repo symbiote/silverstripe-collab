@@ -40,6 +40,11 @@ class SearchDashletStatic_Controller extends SearchDashlet_Controller {
 
 		$form = parent::SearchForm();
 		if($form) {
+
+			// Populate the search with the static search term that has been defined.
+
+			$term = $this->data()->SearchTerm;
+			$form->Fields()->dataFieldByName('Search')->setValue($term);
 			$form->addExtraClass('static-search-dashlet-form');
 		}
 		return $form;
