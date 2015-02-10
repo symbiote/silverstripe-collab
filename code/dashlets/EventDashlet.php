@@ -28,24 +28,20 @@ class EventDashlet extends Dashlet {
 	public function getCMSFields() {
 
 		$fields = parent::getCMSFields();
-		$fields->push(CheckboxField::create('OnlyUpcoming'));
 		$fields->push(MultiSelect2Field::create(
-			'Calenders',
-			'Calenders',
-			Calendar::get()->map()->toArray()
-		));
+			'Calendars'
+		)->setSource(Calendar::get()->map()->toArray())->setMultiple(true));
+		$fields->push(CheckboxField::create('OnlyUpcoming'));
 		return $fields;
 	}
 
 	public function getDashletFields() {
 
 		$fields = parent::getDashletFields();
-		$fields->push(CheckboxField::create('OnlyUpcoming'));
 		$fields->push(MultiSelect2Field::create(
-			'Calenders',
-			'Calenders',
-			Calendar::get()->map()->toArray()
-		));
+			'Calendars'
+		)->setSource(Calendar::get()->map()->toArray())->setMultiple(true));
+		$fields->push(CheckboxField::create('OnlyUpcoming'));
 		return $fields;
 	}
 
@@ -55,13 +51,19 @@ class EventDashlet_Controller extends Dashlet_Controller {
 
 	public function getEvents() {
 
-		// Retrieve and merge events for each calendar selection.
+		// Retrieve and merge events for each calendar selection, taking the only upcoming flag into account.
 
 		$events = ArrayList::create();
 		foreach($this->data()->Calendars() as $calendar) {
-			$events->merge($calendar->getEventList(null, null));
+			$events->merge($this->data()->OnlyUpcoming ? $calendar->UpcomingEvents() : $calendar->getEventList(null, null));
 		}
-		return $events;
+
+		// Make sure the events are sorted correctly after merging.
+
+		return $events->sort(array(
+			'StartDate' => 'ASC',
+			'StartTime' => 'ASC'
+		));
 	}
 
 }
