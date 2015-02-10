@@ -5,7 +5,7 @@
 	"license": "BSD-3-Clause",
 	"require": {
 		"sheadawson/silverstripe-select2": "dev-master#e05e844b4820f7129d135532c15629d71ce197ac",
-		"silverstripe-australia/ba-sis": "1.1.2",
+		"silverstripe-australia/ba-sis": "1.1.3",
 		"silverstripe-australia/memberprofiles": "1.1.0",
 		"silverstripe/event-calendar": "1.0.9",
 		"silverstripe/frontend-dashboards": "~1.1",
