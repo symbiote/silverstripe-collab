@@ -8,6 +8,8 @@
 				<div><% if not AllDay %>{$StartTime.Nice} - {$EndTime.Nice}<% end_if %></div>
 			</p>
 		<% end_loop %>
+	<% else %>
+		<p>There is no calendar selected.</p>
 	<% end_if %>
 
 </div>

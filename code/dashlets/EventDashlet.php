@@ -29,6 +29,7 @@ class EventDashlet extends Dashlet {
 
 		$fields = parent::getCMSFields();
 		$fields->push(MultiSelect2Field::create(
+			'Calendars',
 			'Calendars'
 		)->setSource(Calendar::get()->map()->toArray())->setMultiple(true));
 		$fields->push(CheckboxField::create('OnlyUpcoming'));
@@ -39,6 +40,7 @@ class EventDashlet extends Dashlet {
 
 		$fields = parent::getDashletFields();
 		$fields->push(MultiSelect2Field::create(
+			'Calendars',
 			'Calendars'
 		)->setSource(Calendar::get()->map()->toArray())->setMultiple(true));
 		$fields->push(CheckboxField::create('OnlyUpcoming'));
