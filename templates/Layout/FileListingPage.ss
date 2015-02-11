@@ -21,7 +21,7 @@
 								<% if First %>
 									<li><a href="$Top.Link">$Title</a></li>
 								<% else %>
-									<li><span class="fa fa-caret-right"></span><a href="{$Top.Link}?cat=$ID">$Title</a></li>
+									<li> / <a href="{$Top.Link}?cat=$ID">$Title</a></li>
 								<% end_if %>
 							<% end_loop %>
 						</ul>
@@ -45,17 +45,17 @@
 									<% if ClassName == "Folder" %>
 										<% if Children %>
 											<td class="name"><a href="$Location">$Title</a></td>
-											<td class="filetype"><a href="$Location"><span class="fa fa-folder"></span></a>Folder</td>
+											<td class="filetype"><a href="$Location" class="folder">Folder</a></td>
 										<% else %>
 											<td class="name">$Title</td>
-											<td class="filetype"><span class="fa fa-folder-o"></span>Folder</td>
+											<td class="filetype"><span class="folder">Folder</span></td>
 										<% end_if %>
 										<td>-</td>
 										<td>-</td>
 										<td>-</td>
 									<% else %>
 										<td class="name"><a href="$Location">$Title</a></td>
-										<td class="filetype"><a href="$Location" title="$Title.XML"><span class="fa $FontAwesomeIconClass"></span></a>$Extension</td>
+										<td class="filetype"><a href="$Location" title="$Title.XML" class="$Extension"></a>$Extension</td>
 										<td>$getSize</td>
 										<td class="version">$LastEdited.Nice<% if Owner %><br /><span class="owner">$Owner.Name</span><% end_if %></td>
 										<td>
