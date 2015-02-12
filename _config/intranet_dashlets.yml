@@ -8,8 +8,23 @@ DashboardUser:
       PosY: 1
       Width: 5
       Height: 4
-    UserProfileDashlet:
-      PosX: 6
+    AnnouncementDashlet:
+      PosX: 8
       PosY: 1
       Width: 3
+      Height: 2
+    EventDashlet:
+      PosX: 8
+      PosY: 3
+      Width: 3
+      Height: 2
+    RecentDashlet:
+      PosX: 6
+      PosY: 1
+      Width: 2
+      Height: 2  
+    UserProfileDashlet:
+      PosX: 6
+      PosY: 3
+      Width: 2
       Height: 2
