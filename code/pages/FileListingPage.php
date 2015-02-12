@@ -175,7 +175,7 @@ class FileListingPage_Controller extends Page_Controller {
 
 	public function search($data) {
 		$link = $this->Link();
-		if($cat = $data['cat']) {
+		if(isset($data['cat']) && ($cat = $data['cat'])) {
 			$link = $this::join_links($link, "?cat={$cat}");
 		}
 		if($term = $data['term']) {
