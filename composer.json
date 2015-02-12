@@ -4,6 +4,7 @@
 	"type": "silverstripe-module",
 	"license": "BSD-3-Clause",
 	"require": {
+		"nyeholt/silverstripe-simplewiki": "1.0.0",
 		"sheadawson/silverstripe-select2": "1.0.0",
 		"silverstripe-australia/ba-sis": "1.1.2",
 		"silverstripe-australia/memberprofiles": "1.1.0",
