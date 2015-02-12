@@ -1,0 +1,15 @@
+---
+Name: dashlets
+---
+DashboardUser:
+  default_layout:
+    TimelineDashlet: 
+      PosX: 1
+      PosY: 1
+      Width: 5
+      Height: 4
+    UserProfileDashlet:
+      PosX: 6
+      PosY: 1
+      Width: 3
+      Height: 2
