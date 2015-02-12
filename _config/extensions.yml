@@ -1,3 +1,6 @@
 File:
   extensions:
     - TaxonomyFileExtension
+SiteTree:
+  extensions:
+    - WorkflowEmbargoExpiryExtension
