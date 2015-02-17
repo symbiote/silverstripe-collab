@@ -10,7 +10,8 @@
 		"silverstripe-australia/memberprofiles": "1.1.0",
 		"silverstripe/event-calendar": "1.0.9",
 		"silverstripe/frontend-dashboards": "~1.1",
-		"silverstripe/microblog": "~1.4"
+		"silverstripe/microblog": "~1.4",
+		"silverstripe-australia/notifications": "~1.0"
 	},
 	"extra": {
 		"branch-alias": {
