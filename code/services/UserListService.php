@@ -34,20 +34,24 @@ class UserListService {
 		if (count($bits) !== 2) {
 			throw new Exception("Invalid item being retrieved");
 		}
-		
+
 		$data = RestrictedList::create($bits[0])->byID($bits[1]);
 		if ($data) {
-			$d = array();
 			if (method_exists($data, 'mapForList')) {
 				$d = $data->mapForList();
-				if ($data->LastEdited) {
-					$d['edited_time'] = strtotime($data->LastEdited);
-					$d['created_time'] = strtotime($data->Created);
-				}
-				
-				return $d;
+			} else {
+				$d = array(
+					'Title'		=> $data->Title,
+					'ID'		=> $data->ID
+				);
 			}
+			
 			$data->extend('updateMapForList', $d);
+			if ($data->LastEdited) {
+				$d['edited_time'] = strtotime($data->LastEdited);
+				$d['created_time'] = strtotime($data->Created);
+			}
+
 			return count($d) ? $d : null;
 		}
 	}
