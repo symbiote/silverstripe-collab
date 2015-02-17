@@ -1,7 +1,7 @@
 ;
 (function($) {
 
-	var LISTS_KEY = 'intranet-demo-fav-list';
+	var LISTS_KEY = 'intranet-sis-fav-list';
 
 	function ListManager() {
 		this.lists = {};
@@ -299,13 +299,17 @@
 				if (!list.items[itemId]) {
 					continue;
 				}
-				var listItem = $('<div class="save-list-item" data-id="' + list.items[itemId].typeId + '"></div>');
+				var item = list.items[itemId];
+				var listItem = $('<div class="save-list-item" data-id="' + item.typeId + '"></div>');
 				listItem.attr('data-list', listName);
 				listItem.append('<a class="delete char-icon deleteItem" href="#"><span class="typcn typcn-trash"></span></a>');
+				if (item.Link) {
+					listItem.append('<a class="navigate char-icon openItem" href="' + item.Link + '"><span class="typcn typcn-arrow-forward-outline"></span></a>');
+				}
 				listItem.append('<a href="#" class="save-list-item-title"></a>');
-				listItem.find('.save-list-item-title').text(list.items[itemId].Title);
+				listItem.find('.save-list-item-title').text(item.Title);
 				
-				listItem.append('<div class="save-list-item-content">' + list.items[itemId].Content + '</div>');
+				listItem.append('<div class="save-list-item-content">' + item.Content + '</div>');
 				listPopup.append(listItem);
 			}
 			$('body').append(listPopup);
@@ -316,7 +320,7 @@
 
 			return false;
 		});
-		
+
 		$(document).on('click', 'a.deleteItem', function (e) {
 			e.preventDefault();
 			var listItem = $(this).parents('.save-list-item');
