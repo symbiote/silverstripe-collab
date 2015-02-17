@@ -35,7 +35,7 @@ class UserListService {
 			throw new Exception("Invalid item being retrieved");
 		}
 
-		$data = RestrictedList::create($bits[0])->byID($bits[1]);
+		$data = DataList::create($bits[0])->restrictedByID($bits[1]);
 		if ($data) {
 			if (method_exists($data, 'mapForList')) {
 				$d = $data->mapForList();
