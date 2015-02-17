@@ -1,0 +1,30 @@
+.list-saver { 
+	float: right;
+	width: 10px;
+	position: relative;
+}
+.default-save-placeholder { display: none }
+
+
+.list-save-field  {
+	width: 90%;
+	margin: 0px auto 10px auto;
+	
+}
+
+.list-save-info select, .list-save-info input, .list-save-info button {
+	width: 100%;
+	
+}
+
+.list-item-save-form .modal-dialog {
+	width: 300px;
+}
+
+.save-list-item-content {
+	display: none;
+}
+
+.list-save-form-close {
+	float: right;
+}

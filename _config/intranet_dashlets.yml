@@ -1,6 +1,15 @@
 ---
 Name: dashlets
 ---
+DashboardController:
+  allowed_dashlets:
+    - AnnouncementDashlet
+    - TimelineDashlet
+    - TagsDashlet
+    - NoteDashlet
+    - RecentDashlet
+    - UserProfileDashlet
+    - EventDashlet
 DashboardUser:
   default_layout:
     TimelineDashlet: 

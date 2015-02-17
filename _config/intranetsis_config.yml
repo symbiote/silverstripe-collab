@@ -1,0 +1,15 @@
+---
+Name: intranet_config
+---
+File:
+  extensions:
+    - TaxonomyFileExtension
+SiteTree:
+  extensions:
+    - WorkflowEmbargoExpiryExtension
+Member:
+  extensions:
+    - MemberListExtension
+TimelineController:
+  extensions:
+    - TimelineIntranetExtension
