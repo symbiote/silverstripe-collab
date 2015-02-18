@@ -17,18 +17,18 @@ it should work against any base install of SilverStripe 3.1.*.
 * $ `composer require silverstripe-australia/intranet-sis`
 * $ `composer require silverstripe-australia/minimalist-theme`
 * $ `phing`
+* $ `sake dev/tasks/BootstrapIntranetsisTask`
 
-After this runs, you should have an 'installed' system; though it does need a 
-couple of things to have things 'usable'. 
+Note: the last step above performs the following - if you're comfortable doing
+these by yourself, skip the dev/task. 
 
 * The top level site needs to have the theme set to 'ssau-minimalist', and published
 * A Site Dashboard Page created to act as the dashboard
 * A homepage created as a redirector to point at the dashboard page. 
 
-If you're comfortable, do the above manually... _or_ simple run the 
-BootstrapIntranetsisTask which will create the required items
-
-* $ `sake dev/tasks/BootstrapIntranetsisTask`
+If you load the site, you should be redirected to the /dashboard URL, which
+will prompt you to login. The default user account is admin / admin which is 
+configured in mysite/local.conf.php - please change this!
 
 
 
