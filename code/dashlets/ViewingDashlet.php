@@ -45,7 +45,7 @@ class ViewingDashlet_Controller extends Dashlet_Controller {
 
 	public function init() {
 		parent::init();
-		Requirements::javascript('intra-sis/javascript/dashlet-viewingdashlet.js');
+		Requirements::javascript('intranet-sis/javascript/dashlet-viewingdashlet.js');
 	}
 
 	public function display() {

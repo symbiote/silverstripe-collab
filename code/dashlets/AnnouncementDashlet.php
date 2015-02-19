@@ -61,7 +61,7 @@ class AnnouncementDashlet_Controller extends Dashlet_Controller {
 	
 	public function init() {
 		parent::init();
-		Requirements::javascript('intra-sis/javascript/dashlet-announcements.js');
+		Requirements::javascript('intranet-sis/javascript/dashlet-announcements.js');
 	}
 	
 	public function _getAnnouncement($render = true) {

@@ -24,6 +24,28 @@ class EventDashlet extends Dashlet {
 	public static $cmsTitle = 'Events';
 
 	public static $description = 'View Upcoming Events';
+	
+	private $addCalendar = false;
+	
+	public function onBeforeWrite() {
+		if (!$this->ID) {
+			$this->addCalendar = true;	
+		}
+		parent::onBeforeWrite();
+	}
+	
+	public function onAfterWrite() {
+		parent::onAfterWrite();
+		
+		if ($this->addCalendar) {
+			$this->addCalendar = false;
+			$calendars = Calendar::get()->restrict();
+
+			foreach ($calendars as $cal) {
+				$this->Calendars()->add($cal);
+			}
+		}
+	}
 
 	public function getCMSFields() {
 
