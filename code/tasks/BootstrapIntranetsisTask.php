@@ -54,7 +54,7 @@ class BootstrapIntranetsisTask extends BuildTask {
 		));
 
 		$events->write();
-		$toPublish[] = $toPublish;
+		$toPublish[] = $events;
 
 		$dummyEvent = CalendarEvent::create(array(
 				'Title' => 'Sample event',
@@ -69,6 +69,13 @@ class BootstrapIntranetsisTask extends BuildTask {
 				'EventID' => $dummyEvent->ID,
 		));
 		$dateTime->write();
+		
+		$files = MediaHolder::create(array(
+				'Title' => 'File Listing',
+				'ParentID' => $site->ID,
+		));
+		$files->write();
+		$toPublish[] = $files;
 
 		$news = MediaHolder::create(array(
 				'Title' => 'News',
@@ -78,7 +85,7 @@ class BootstrapIntranetsisTask extends BuildTask {
 		$news->write();
 		$toPublish[] = $news;
 
-		$story = <<<WORDS
+		$text = <<<WORDS
 			<p>Oh no! Pull a sickie, this epic cuzzie is as rip-off as a snarky morepork. Mean while, in behind the 
 				bicycle shed, Lomu and The Hungery Caterpilar were up to no good with a bunch of cool jelly tip icecreams. 
 					The flat stick force of his chundering was on par with Rangi's solid rimu chilly bin. Put the jug on 
@@ -97,7 +104,7 @@ WORDS;
 
 		$story = MediaPage::create(array(
 			'Title' => 'Sample news item',
-			'Content' => $story,
+			'Content' => $text,
 			'ParentID'		=> $news->ID,
 		));
 		$story->write();
@@ -112,9 +119,25 @@ WORDS;
 		$this->o("Configured Site object");
 
 		foreach ($toPublish as $item) {
+			if (!is_object($item)) {
+				print_r($item);
+				continue;
+			}
 			$item->doPublish();
 		}
 		$this->o("Published everything");
+		
+		$message = <<<MSG
+Your intranet system has been succesfully installed! Some things you might be interested in doing from this point are...
+
+* Replying to this post! 
+* Customising your dashboard
+* Uploading some files and images to browse in the [file listing](file-listing)
+* Create some events
+* Add some RSS feeds to your Announcements dashlet (use the wrench to configure it!)
+MSG;
+		
+		singleton('MicroBlogService')->createPost(null, $message, 'Installed!', 0, null, array('logged_in' => 1));
 
 		Restrictable::set_enabled(true);
 	}
