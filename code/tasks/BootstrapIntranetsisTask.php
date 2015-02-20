@@ -70,7 +70,7 @@ class BootstrapIntranetsisTask extends BuildTask {
 		));
 		$dateTime->write();
 		
-		$files = MediaHolder::create(array(
+		$files = FileListingPage::create(array(
 				'Title' => 'File Listing',
 				'ParentID' => $site->ID,
 		));
@@ -91,7 +91,7 @@ class BootstrapIntranetsisTask extends BuildTask {
 					The flat stick force of his chundering was on par with Rangi's solid rimu chilly bin. Put the jug on 
 			will you bro, all these hard yakka utes can wait till later. The first prize for frying up goes to... 
 							some uni student and his wicked wet blanket, what a egg. Bro, giant wekas are really tip-top good
-		with dodgy fellas, aye. You have no idea how nuclear-free our bung kiwis were aye. Every time
+		with dodgy fellas, aye. You have no idea how nuclear-free our bung kiwis were aye. Every time</p><p>
 						I see those carked it wifebeater singlets it's like Castle Hill all over again aye, pissed 
 										as a rat. Anyway, Uncle Bully is just Mr Whippy in disguise, to find the true meaning of 
 											life, one must start whale watching with the box of fluffies, mate. After the trotie
@@ -113,6 +113,16 @@ WORDS;
 		$group->write();
 		$this->o("Created All Members group");
 
+		
+		$member = Member::create(array(
+			'FirstName' => 'Anon',
+			'Surname'	=> 'Ymous',
+			'Email'		=> 'anon@test.com'
+		));
+		$member->write();
+		$member->Groups()->add($group);
+		
+		
 		$site->Theme = 'ssau-minimalist';
 		$site->LoggedInGroups()->add($group);
 		$site->write();
