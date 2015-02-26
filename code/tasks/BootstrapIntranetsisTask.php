@@ -43,10 +43,7 @@ class BootstrapIntranetsisTask extends BuildTask {
 		$toPublish[] = $home;
 		$this->o("Created homepage");
 
-		$group = Group::create(array(
-				'Title' => 'All members',
-		));
-
+		
 		$events = Calendar::create(array(
 				'Title' => 'Events',
 				'URLSegment' => 'events',
@@ -109,6 +106,19 @@ WORDS;
 		));
 		$story->write();
 		$toPublish[] = $story;
+		
+		$wiki = WikiPage::create(array(
+				'Title' => 'Wiki',
+				'URLSegment' => 'wiki',
+				'ParentID' => $site->ID
+		));
+
+		$wiki->write();
+		$toPublish[] = $wiki;
+
+		$group = Group::create(array(
+				'Title' => 'All members',
+		));
 
 		$group->write();
 		$this->o("Created All Members group");
