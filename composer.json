@@ -10,7 +10,7 @@
 		"silverstripe-australia/memberprofiles": "~1.1",
 		"silverstripe/event-calendar": "~1.0",
 		"silverstripe/frontend-dashboards": "~1.1",
-		"silverstripe/microblog": "~1.5",
+		"silverstripe/microblog": "~1.7.0",
 		"silverstripe-australia/notifications": "~1.0"
 	},
 	"extra": {
