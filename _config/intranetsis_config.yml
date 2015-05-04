@@ -11,6 +11,3 @@ SiteTree:
 Member:
   extensions:
     - MemberListExtension
-TimelineController:
-  extensions:
-    - TimelineIntranetExtension
