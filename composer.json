@@ -9,7 +9,7 @@
 		"silverstripe-australia/ba-sis": "~1.2.0",
 		"silverstripe-australia/memberprofiles": "~1.1",
 		"silverstripe/event-calendar": "~1.0",
-		"silverstripe/frontend-dashboards": "~1.2.0",
+		"silverstripe/frontend-dashboards": "~1.2",
 		"silverstripe/microblog": "~1.10.0",
 		"silverstripe-australia/notifications": "~1.0"
 	},
