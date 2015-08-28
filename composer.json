@@ -10,12 +10,12 @@
 		"silverstripe-australia/memberprofiles": "~1.1",
 		"silverstripe/event-calendar": "~1.0",
 		"silverstripe/frontend-dashboards": "~1.2",
-		"silverstripe/microblog": "~1.10.0",
+		"silverstripe/microblog": "~2.1.0",
 		"silverstripe-australia/notifications": "~1.0"
 	},
 	"extra": {
 		"branch-alias": {
-			"dev-master": "1.4.x-dev"
+			"dev-master": "1.5.x-dev"
 		}
 	},
 	"minimum-stability": "dev"
