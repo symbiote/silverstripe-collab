@@ -114,7 +114,7 @@
 		},
 		save: function () {
 			localStorage.setItem(LISTS_KEY, JSON.stringify(this.lists));
-
+			
 			// Save the list to the server for when there is nothing found locally.
 			this.serverSave(this.lists);
 		},
@@ -148,10 +148,6 @@
 				if(data && (data.response !== '')) {
 					// The current user has an existing list, so return it.
 					window.Lists.lists = JSON.parse(data.response);
-				}
-				else {
-					// The current user is not logged in, so return an empty list.
-					window.Lists.lists = {};
 				}
 			})
 		}

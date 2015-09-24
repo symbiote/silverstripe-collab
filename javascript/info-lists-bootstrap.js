@@ -139,7 +139,6 @@
 			
 			listTarget.each (function () {
 				renderList($(this));
-//				$(document).foundation('topbar', 'reflow');
 			});
 		}
 		
