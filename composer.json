@@ -1,6 +1,6 @@
 {
-	"name": "silverstripe-australia/intranet-sis",
-	"description": "SilverStripe Australia Standard Implementation Set, Intranet Module.",
+	"name": "silverstripe-australia/ba-sis-community",
+	"description": "SilverStripe Australia Standard Implementation Set, Community Package.",
 	"type": "silverstripe-module",
 	"license": "BSD-3-Clause",
 	"require": {
