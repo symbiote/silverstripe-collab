@@ -4,7 +4,11 @@
 
 **SilverStripe Australia** Standard Implementation Set, Community Package.
 
-## Getting started
+The recommended module compilation for a base SilverStripe project, which provides the most common, and what we consider to be the most fundamental components when building an intuitive and flexible platform for both users and developers alike.
+
+These module dependencies will be updated over time, so please keep an eye out for future releases!
+
+## Getting Started
 
 The simplest way to get started with this project is via composer - there's a 
 _lot_ of dependent modules which will be much easier managed via composer than 
