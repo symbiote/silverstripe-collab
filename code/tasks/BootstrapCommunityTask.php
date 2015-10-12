@@ -4,7 +4,7 @@
  * @author <marcus@silverstripe.com.au>
  * @license BSD License http://www.silverstripe.org/bsd-license
  */
-class BootstrapIntranetsisTask extends BuildTask {
+class BootstrapCommunityTask extends BuildTask {
 
 	public function run($request) {
 		Restrictable::set_enabled(false);
@@ -138,7 +138,7 @@ WORDS;
 		$this->o("Published everything");
 		
 		$message = <<<MSG
-Your intranet system has been succesfully installed! Some things you might be interested in doing from this point are...
+Your community system has been succesfully installed! Some things you might be interested in doing from this point are...
 
 * Replying to this post! 
 * Customising your dashboard

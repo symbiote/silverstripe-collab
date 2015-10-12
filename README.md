@@ -1,8 +1,8 @@
-# [intra-sis](https://github.com/silverstripe-australia)
+# [Ba-SIS Community](https://packagist.org/packages/silverstripe-australia/ba-sis-community)
 
 [![Build Status](https://travis-ci.org/silverstripe-australia/silverstripe-ba-sis.svg?branch=master)](https://travis-ci.org/silverstripe-australia/silverstripe-ba-sis)
 
-**SilverStripe Australia** Standard Implementation Set, Intranet Module.
+**SilverStripe Australia** Standard Implementation Set, Community Package.
 
 ## Getting started
 
@@ -13,11 +13,11 @@ manually installing everything!
 We find it simplest using the SilverStripe Australia base project (Ozzy), but
 it should work against any base install of SilverStripe 3.1.*. 
 
-* $ `composer create-project -s dev silverstripe/ozzy myintranet`
-* $ `composer require silverstripe-australia/intranet-sis`
+* $ `composer create-project -s dev silverstripe/ozzy mycommunity`
+* $ `composer require silverstripe-australia/ba-sis-community`
 * $ `composer require silverstripe-australia/minimalist-theme`
 * $ `phing`
-* $ `sake dev/tasks/BootstrapIntranetsisTask`
+* $ `sake dev/tasks/BootstrapCommunityTask`
 
 Note: the last step above performs the following - if you're comfortable doing
 these by yourself, skip the dev/task. 

@@ -1,6 +1,8 @@
 ;
 (function($) {
 
+	// This name hasn't been updated to provide backwards compatibility for favourite lists.
+
 	var LISTS_KEY = 'intranet-sis-fav-list';
 
 	function ListManager() {

@@ -1,5 +1,5 @@
 ---
-Name: dashlets
+Name: community_dashlets
 ---
 DashboardController:
   allowed_dashlets:
