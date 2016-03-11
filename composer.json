@@ -6,7 +6,7 @@
 	"require": {
 		"nyeholt/silverstripe-simplewiki": "~1.1",
 		"sheadawson/silverstripe-select2": "~1.0",
-		"silverstripe-australia/ba-sis": "~1.3",
+		"silverstripe-australia/ba-sis": "~2.0",
 		"silverstripe-australia/memberprofiles": "~1.1",
 		"silverstripe/event-calendar": "~1.0",
 		"silverstripe/frontend-dashboards": "~1.2",
