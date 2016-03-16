@@ -46,7 +46,7 @@ class InteractionDashlet_Controller extends Dashlet_Controller {
 	);
 	public $interactions;
 
-	public function items() {
+	public function Items() {
 
 		if ($this->Days == null) {
 			$this->Days = 30;
