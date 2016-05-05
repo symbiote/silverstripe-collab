@@ -17,7 +17,7 @@ manually installing everything!
 We find it simplest using the SilverStripe Australia base project (Ozzy), but
 it should work against any base install of SilverStripe 3.1.*. 
 
-* $ `composer create-project -s dev silverstripe/ozzy mycommunity`
+* $ `composer create-project -s dev silverstripe-australia/base mycommunity`
 * $ `composer require silverstripe-australia/ba-sis-community`
 * $ `composer require silverstripe-australia/minimalist-theme`
 * $ `phing`
