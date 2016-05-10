@@ -1,6 +1,6 @@
 # [Ba-SIS Community](https://packagist.org/packages/silverstripe-australia/ba-sis-community)
 
-[![Build Status](https://travis-ci.org/silverstripe-australia/silverstripe-ba-sis.svg?branch=master)](https://travis-ci.org/silverstripe-australia/silverstripe-ba-sis)
+[![Build Status](https://travis-ci.org/silverstripe-australia/silverstripe-ba-sis-community.svg?branch=master)](https://travis-ci.org/silverstripe-australia/silverstripe-ba-sis-community)
 
 **SilverStripe Australia** Standard Implementation Set, Community Package, AKA basis community.
 
