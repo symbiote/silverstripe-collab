@@ -1,8 +1,8 @@
-# [Ba-SIS Community](https://packagist.org/packages/silverstripe-australia/ba-sis-community)
+# [Basis Community](https://packagist.org/packages/silverstripe-australia/ba-sis-community)
 
 [![Build Status](https://travis-ci.org/silverstripe-australia/silverstripe-ba-sis-community.svg?branch=master)](https://travis-ci.org/silverstripe-australia/silverstripe-ba-sis-community)
 
-**SilverStripe Australia** Standard Implementation Set, Community Package, AKA basis community.
+Ba-SIS Community. **SilverStripe Australia** Standard Implementation Set, Community Package. AKA, Basis Community.
 
 The recommended module compilation for a base SilverStripe project, which provides the most common, and what we consider to be the most fundamental components when building an intuitive and flexible platform for both users and developers alike.
 
@@ -14,7 +14,7 @@ The simplest way to get started with this project is via composer - there's a
 _lot_ of dependent modules which will be much easier managed via composer than 
 manually installing everything! 
 
-We find it simplest using the SilverStripe Australia base project (Ozzy), but
+We find it simplest using the SilverStripe Australia base project, but
 it should work against any base install of SilverStripe 3.1.*. 
 
 * $ `composer create-project -s dev silverstripe-australia/base mycommunity`
