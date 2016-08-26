@@ -33,6 +33,7 @@ before_script:
   - rm -r multisites
   - rm -r frontend-dashboards
   - rm -r microblog
+  - rm -r restrictedobjects
   - sed -i '5 s/function Field() {/function Field($properties = array()) {/' event_calendar/code/CalendarTimeField.php
 # This causes issues with SS 3.2 during tests.
   - rm -r versionedfiles
