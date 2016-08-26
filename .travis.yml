@@ -31,7 +31,6 @@ before_script:
   - cd ~/builds/ss
 # These cause issues during tests.
   - rm -r multisites
-  - sed -i '7,9 s/^/#/' mediawesome/_config/extensions.yml
   - rm -r frontend-dashboards
   - rm -r microblog
   - sed -i '5 s/function Field() {/function Field($properties = array()) {/' event_calendar/code/CalendarTimeField.php
