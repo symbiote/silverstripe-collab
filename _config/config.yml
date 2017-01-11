@@ -1,0 +1,13 @@
+---
+Name: siscommunityconfig
+After: 'framework/*','cms/*'
+---
+LeftAndMain:
+  menu_groups:
+    Modules:
+      - MicroPostAdmin
+    Administration:
+      - DashboardAdmin
+      - FrontendAdmin
+      - NotificationAdmin
+      - RestrictedObjectsAdmin

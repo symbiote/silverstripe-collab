@@ -6,7 +6,6 @@ File:
     - TaxonomyFileExtension
 SiteTree:
   extensions:
-    - WorkflowEmbargoExpiryExtension
     - PageListExtension
 Member:
   extensions:
