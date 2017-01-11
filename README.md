@@ -14,8 +14,7 @@ The simplest way to get started with this project is via composer - there's a
 _lot_ of dependent modules which will be much easier managed via composer than 
 manually installing everything! 
 
-We find it simplest using the SilverStripe Australia base project, but
-it should work against any base install of SilverStripe 3.1.*. 
+We find it simplest using the SilverStripe Australia base project.
 
 * $ `composer create-project -s dev silverstripe-australia/base mycommunity`
 * $ `composer require silverstripe-australia/ba-sis-community`

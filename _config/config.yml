@@ -11,3 +11,5 @@ LeftAndMain:
       - FrontendAdmin
       - NotificationAdmin
       - RestrictedObjectsAdmin
+FrontendAdmin:
+  menu_title: 'Frontend Objects'
