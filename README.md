@@ -14,7 +14,7 @@ These module dependencies will be updated over time, so please keep an eye out f
 
 The recommended approach is to use composer, considering the large number of module dependencies.
 
-* [Place the module and dependencies under your root project directory.](https://packagist.org/packages/silverstripe-australia/ba-sis)
+* [Place the module and dependencies under your root project directory.](https://packagist.org/packages/silverstripe-australia/ba-sis-community)
 * `/dev/build`
 * `/dev/tasks/BootstrapCommunityTask`
 
