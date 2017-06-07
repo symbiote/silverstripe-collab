@@ -23,10 +23,10 @@ The recommended approach is to use composer, considering the large number of mod
 Among some quality of life improvements, you'll find the following modules included (and their benefits below).
 
 ### [Basis](https://github.com/silverstripe-australia/silverstripe-ba-sis/)
-### [Simple Wiki](https://github.com/nyeholt/silverstripe-simplewiki/)
-### [Select2](https://github.com/sheadawson/silverstripe-select2/)
-### [Member Profiles](https://github.com/silverstripe-australia/silverstripe-memberprofiles/)
 ### [Event Calendar](https://github.com/unclecheese/silverstripe-event-calendar/)
 ### [Frontend Dashboards](https://github.com/nyeholt/silverstripe-frontend-dashboards/)
+### [Member Profiles](https://github.com/silverstripe-australia/silverstripe-memberprofiles/)
 ### [Microblog](https://github.com/nyeholt/silverstripe-microblog/)
 ### [Notifications](https://github.com/silverstripe-australia/silverstripe-notifications/)
+### [Select2](https://github.com/sheadawson/silverstripe-select2/)
+### [Simple Wiki](https://github.com/nyeholt/silverstripe-simplewiki/)
