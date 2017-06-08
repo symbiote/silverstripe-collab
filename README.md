@@ -40,11 +40,11 @@ This provides a dashboard that each user can personalise.
 
 ### [Member Profiles](https://github.com/silverstripe-australia/silverstripe-memberprofiles/)
 
-The provides the ability to customise a user registration and profile management form.
+This provides the ability to customise a user registration and profile management page.
 
 ### [Microblog](https://github.com/nyeholt/silverstripe-microblog/)
 
-This provides the ability to implement powerful communication features that are commonly found across popular social media sites.
+This provides powerful communication features that are commonly found across popular social media sites.
 
 ### [Notifications](https://github.com/silverstripe-australia/silverstripe-notifications/)
 
