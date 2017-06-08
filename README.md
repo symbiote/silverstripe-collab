@@ -36,7 +36,7 @@ This provides a calendar for upcoming events.
 
 ### [Frontend Dashboards](https://github.com/nyeholt/silverstripe-frontend-dashboards/)
 
-This provides a dashboard that each user can personalise.
+This provides a landing page that each user can personalise.
 
 ### [Member Profiles](https://github.com/silverstripe-australia/silverstripe-memberprofiles/)
 
@@ -56,4 +56,4 @@ This provides some improved dropdown fields.
 
 ### [Simple Wiki](https://github.com/nyeholt/silverstripe-simplewiki/)
 
-This provides the ability to create wiki pages, that are editable on the fly by users.
+This provides the ability to create wiki pages, that are editable by users (with permissions) on the fly.
