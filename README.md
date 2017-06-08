@@ -52,7 +52,7 @@ This provides the ability to easily manage and send notifications from your code
 
 ### [Select2](https://github.com/sheadawson/silverstripe-select2/)
 
-This provides some handy form fields.
+This provides some handy form fields, such as the AJAX dropdown.
 
 ### [Simple Wiki](https://github.com/nyeholt/silverstripe-simplewiki/)
 
