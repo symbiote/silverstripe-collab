@@ -27,6 +27,7 @@ before_script:
   - cd ~/builds/ss
 # These cause issues during tests.
   - rm -r multisites
+  - rm -r multisites-googleanalytics
   - rm -r frontend-dashboards
   - rm -r microblog
   - rm -r restrictedobjects

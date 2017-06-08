@@ -24,16 +24,36 @@ Among some quality of life improvements, you'll find the following modules inclu
 
 ### [Basis](https://github.com/silverstripe-australia/silverstripe-ba-sis/)
 
-The foundation for this, please have a read through the documentation provided for an overview on [what's included](https://github.com/silverstripe-australia/silverstripe-ba-sis/#whats-included).
+**The foundation for this**, please have a read through the documentation provided for an overview on [what's included](https://github.com/silverstripe-australia/silverstripe-ba-sis/#whats-included).
 
 ### [Dropzone](https://github.com/unclecheese/silverstripe-dropzone/)
 
-This provides an improved, and consistent HTML5 file uploading experience.
+This provides an improved, and consistent HTML5 file upload experience.
 
 ### [Event Calendar](https://github.com/unclecheese/silverstripe-event-calendar/)
+
+This provides a calendar for upcoming events.
+
 ### [Frontend Dashboards](https://github.com/nyeholt/silverstripe-frontend-dashboards/)
+
+This provides a dashboard that each user can personalise.
+
 ### [Member Profiles](https://github.com/silverstripe-australia/silverstripe-memberprofiles/)
+
+The provides the ability to customise a user registration and profile management form.
+
 ### [Microblog](https://github.com/nyeholt/silverstripe-microblog/)
+
+This provides the ability to implement powerful communication features that are commonly found across popular social media sites.
+
 ### [Notifications](https://github.com/silverstripe-australia/silverstripe-notifications/)
+
+This provides the ability to easily manage and send notifications from your code.
+
 ### [Select2](https://github.com/sheadawson/silverstripe-select2/)
+
+This provides some handy form fields.
+
 ### [Simple Wiki](https://github.com/nyeholt/silverstripe-simplewiki/)
+
+This provides the ability to create wiki pages, that are editable by users on the fly.
