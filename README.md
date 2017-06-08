@@ -23,6 +23,13 @@ The recommended approach is to use composer, considering the large number of mod
 Among some quality of life improvements, you'll find the following modules included (and their benefits below).
 
 ### [Basis](https://github.com/silverstripe-australia/silverstripe-ba-sis/)
+
+The foundation for this, please have a read through the documentation provided for an overview on [what's included](https://github.com/silverstripe-australia/silverstripe-ba-sis/#whats-included).
+
+### [Dropzone](https://github.com/unclecheese/silverstripe-dropzone/)
+
+This provides an improved, and consistent HTML5 file uploading experience.
+
 ### [Event Calendar](https://github.com/unclecheese/silverstripe-event-calendar/)
 ### [Frontend Dashboards](https://github.com/nyeholt/silverstripe-frontend-dashboards/)
 ### [Member Profiles](https://github.com/silverstripe-australia/silverstripe-memberprofiles/)
