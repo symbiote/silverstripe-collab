@@ -52,8 +52,8 @@ This provides the ability to easily manage and send notifications from your code
 
 ### [Select2](https://github.com/sheadawson/silverstripe-select2/)
 
-This provides some handy form fields, such as the AJAX dropdown.
+This provides some improved dropdown fields.
 
 ### [Simple Wiki](https://github.com/nyeholt/silverstripe-simplewiki/)
 
-This provides the ability to create wiki pages, that are editable by users on the fly.
+This provides the ability to create wiki pages, that are editable on the fly by users.
