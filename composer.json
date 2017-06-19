@@ -1,5 +1,5 @@
 {
-	"name": "silverstripe-australia/ba-sis-community",
+	"name": "symbiote/silverstripe-collab",
 	"description": "SilverStripe Australia Standard Implementation Set, Community Package.",
 	"type": "silverstripe-module",
 	"license": "BSD-3-Clause",
@@ -15,7 +15,7 @@
 	},
 	"extra": {
 		"branch-alias": {
-			"dev-master": "4.0.x-dev"
+			"dev-master": "5.0.x-dev"
 		}
 	},
 	"minimum-stability": "dev"
