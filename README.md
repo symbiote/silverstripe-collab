@@ -1,4 +1,4 @@
-# [Basis Community](https://packagist.org/packages/silverstripe-australia/ba-sis-community)
+# [Basis Community](https://packagist.org/packages/symbiote/silverstripe-collab)
 
 [![Build Status](https://travis-ci.org/silverstripe-australia/silverstripe-ba-sis-community.svg?branch=master)](https://travis-ci.org/silverstripe-australia/silverstripe-ba-sis-community)
 
@@ -14,7 +14,7 @@ These module dependencies will be updated over time, so please keep an eye out f
 
 The recommended approach is to use composer, considering the large number of module dependencies.
 
-* [Place the module and dependencies under your root project directory.](https://packagist.org/packages/silverstripe-australia/ba-sis-community)
+* [Place the module and dependencies under your root project directory.](https://packagist.org/packages/symbiote/silverstripe-collab)
 * `/dev/build`
 * `/dev/tasks/BootstrapCommunityTask`
 

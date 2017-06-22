@@ -6,12 +6,12 @@
 	"require": {
 		"nyeholt/silverstripe-simplewiki": "~1.1",
 		"sheadawson/silverstripe-select2": "~1.0",
-		"silverstripe-australia/ba-sis": "~6.0",
-		"silverstripe-australia/memberprofiles": "~1.1",
+		"symbiote/silverstripe-seed": "~6.0",
+		"symbiote/silverstripe-memberprofiles": "~1.1",
 		"silverstripe/event-calendar": "~1.0",
 		"silverstripe/frontend-dashboards": "~1.2",
 		"silverstripe/microblog": "~2.4",
-		"silverstripe-australia/notifications": "~1.0"
+		"symbiote/silverstripe-notifications": "~1.0"
 	},
 	"extra": {
 		"branch-alias": {
