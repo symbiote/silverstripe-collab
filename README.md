@@ -1,6 +1,6 @@
-# [Basis Community](https://packagist.org/packages/symbiote/silverstripe-collab)
+# [Collab](https://packagist.org/packages/symbiote/silverstripe-collab)
 
-[![Build Status](https://travis-ci.org/silverstripe-australia/silverstripe-ba-sis-community.svg?branch=master)](https://travis-ci.org/silverstripe-australia/silverstripe-ba-sis-community)
+[![Build Status](https://travis-ci.org/symbiote/silverstripe-collab.svg?branch=master)](https://travis-ci.org/symbiote/silverstripe-collab)
 
 > The recommended module compilation for a base project, which provides the most common, and what we consider to be, the most fundamental components when building an intuitive and flexible platform for both users and developers alike.
 
@@ -22,9 +22,9 @@ The recommended approach is to use composer, considering the large number of mod
 
 Among some quality of life improvements, you'll find the following modules included (and their benefits below).
 
-### [Basis](https://github.com/silverstripe-australia/silverstripe-ba-sis/)
+### [Seed](https://github.com/symbiote/silverstripe-seed/)
 
-**The foundation for this**, please have a read through the documentation provided for an overview on [what's included](https://github.com/silverstripe-australia/silverstripe-ba-sis/#whats-included).
+**The foundation for this**, please have a read through the documentation provided for an overview on [what's included](https://github.com/symbiote/silverstripe-seed/#whats-included).
 
 ### [Dropzone](https://github.com/unclecheese/silverstripe-dropzone/)
 
@@ -38,7 +38,7 @@ This provides a calendar for upcoming events.
 
 This provides a landing page that each user can personalise.
 
-### [Member Profiles](https://github.com/silverstripe-australia/silverstripe-memberprofiles/)
+### [Member Profiles](https://github.com/symbiote/silverstripe-memberprofiles/)
 
 This provides the ability to customise a user registration and profile management page.
 
@@ -46,7 +46,7 @@ This provides the ability to customise a user registration and profile managemen
 
 This provides powerful communication features that are commonly found across popular social media sites.
 
-### [Notifications](https://github.com/silverstripe-australia/silverstripe-notifications/)
+### [Notifications](https://github.com/symbiote/silverstripe-notifications/)
 
 This provides the ability to easily manage and send notifications from your code.
 

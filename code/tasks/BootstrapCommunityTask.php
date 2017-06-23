@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @author <marcus@silverstripe.com.au>
+ * @author <marcus@symbiote.com.au>
  * @license BSD License http://www.silverstripe.org/bsd-license
  */
 class BootstrapCommunityTask extends BuildTask {
@@ -123,7 +123,7 @@ WORDS;
 		$member->Groups()->add($group);
 		
 		
-		$site->Theme = 'ssau-minimalist';
+		$site->Theme = 'symbiote-minimalist';
 		$site->LoggedInGroups()->add($group);
 		$site->write();
 		$this->o("Configured Site object");

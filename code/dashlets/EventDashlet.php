@@ -2,7 +2,7 @@
 
 /**
  *	A dashlet to list upcoming and past events from multiple calendars.
- *	@author Nathan Glasl <nathan@silverstripe.com.au>
+ *	@author Nathan Glasl <nathan@symbiote.com.au>
  */
 
 class EventDashlet extends Dashlet {

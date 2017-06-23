@@ -2,7 +2,7 @@
 
 /**
  * 	An extension on viewing dashlet to allow display of page based announcements and RSS feeds.
- * 	@author Nathan Glasl <nathan@silverstripe.com.au>
+ * 	@author Nathan Glasl <nathan@symbiote.com.au>
  */
 class AnnouncementDashlet extends Dashlet {
 
@@ -153,7 +153,7 @@ class AnnouncementDashlet_Controller extends Dashlet_Controller {
 
 	/**
 	 * 	Recursively construct an object array from the given XML.
-	 * 	@author Nathan Glasl <nathan@silverstripe.com.au>
+	 * 	@author Nathan Glasl <nathan@symbiote.com.au>
 	 */
 	private function recursiveXML($XML, $objects = array()) {
 

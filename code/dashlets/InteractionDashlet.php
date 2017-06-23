@@ -3,7 +3,7 @@
 /**
  * User interaction listing
  *
- * @author Nathan Glasl <nathan@silverstripe.com.au>
+ * @author Nathan Glasl <nathan@symbiote.com.au>
  */
 class InteractionDashlet extends Dashlet {
 

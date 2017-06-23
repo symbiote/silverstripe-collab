@@ -3,7 +3,7 @@
 /**
  * Search listing.
  *
- * @author Nathan Glasl <nathan@silverstripe.com.au>
+ * @author Nathan Glasl <nathan@symbiote.com.au>
  */
 
 class SearchDashlet extends Dashlet {
@@ -27,7 +27,7 @@ class SearchDashlet_Controller extends Dashlet_Controller {
 
 	public function SearchForm() {
 
-		// Use the extensible search form, since it's a dependency of ba-sis.
+		// Use the extensible search form, since it's a dependency of silverstripe-seed.
 
 		$form = null;
 		if(Controller::curr()->hasMethod('SearchForm') && ($form = Controller::curr()->SearchForm())) {
