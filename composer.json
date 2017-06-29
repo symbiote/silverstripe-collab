@@ -18,5 +18,8 @@
 			"dev-master": "5.0.x-dev"
 		}
 	},
+	"replace": {
+		"silverstripe-australia/ba-sis-community": "self.version"
+	},
 	"minimum-stability": "dev"
 }
