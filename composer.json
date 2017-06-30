@@ -1,6 +1,6 @@
 {
 	"name": "symbiote/silverstripe-collab",
-	"description": "Symbiote Standard Implementation Set, Community Package.",
+	"description": "Symbiote Standard Implementation Set, Collaboration Package.",
 	"type": "silverstripe-module",
 	"license": "BSD-3-Clause",
 	"require": {
