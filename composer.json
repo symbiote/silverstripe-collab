@@ -14,6 +14,7 @@
 		"silverstripe-australia/notifications": "~1.0"
 	},
 	"extra": {
+		"installer-name": "collab",
 		"branch-alias": {
 			"dev-master": "4.0.x-dev"
 		}
