@@ -14,6 +14,7 @@
 		"symbiote/silverstripe-notifications": "~1.0"
 	},
 	"extra": {
+		"installer-name": "collab",
 		"branch-alias": {
 			"dev-master": "5.0.x-dev"
 		}
