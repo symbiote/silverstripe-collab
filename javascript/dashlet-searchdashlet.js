@@ -27,20 +27,6 @@
 						}
 					}
 				});
-
-
-
-				// If this form is the static search dashlet, submit as the page loads.
-
-				if(self.hasClass('static-search-dashlet-form')) {
-					self.submit();
-//					self.submit(function() {
-//						dashlet.slideUp();
-//						self.ajaxSubmit();
-//						return false;
-//					});
-
-				}
 			}
 		});
 
