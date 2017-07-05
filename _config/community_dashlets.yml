@@ -1,6 +1,10 @@
 ---
 Name: community_dashlets
 ---
+SearchDashlet_Controller:
+  search_types:
+    - File
+    - MicroPost
 DashboardController:
   allowed_dashlets:
     - AnnouncementDashlet
