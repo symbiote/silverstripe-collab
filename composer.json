@@ -6,7 +6,7 @@
 	"require": {
 		"nyeholt/silverstripe-simplewiki": "~1.1",
 		"sheadawson/silverstripe-select2": "~1.0",
-		"symbiote/silverstripe-seed": "~7.0",
+		"symbiote/silverstripe-seed": "~8.0",
 		"symbiote/silverstripe-memberprofiles": "~1.1",
 		"silverstripe/event-calendar": "~1.0",
 		"symbiote/silverstripe-frontend-dashboards": "~1.2",
@@ -16,7 +16,7 @@
 	"extra": {
 		"installer-name": "collab",
 		"branch-alias": {
-			"dev-master": "5.1.x-dev"
+			"dev-master": "5.2.x-dev"
 		}
 	},
 	"replace": {
