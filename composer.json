@@ -16,7 +16,7 @@
 	"extra": {
 		"installer-name": "collab",
 		"branch-alias": {
-			"dev-master": "5.2.x-dev"
+			"dev-master": "6.0.x-dev"
 		}
 	},
 	"replace": {
